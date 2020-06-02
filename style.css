@@ -1,0 +1,21 @@
+img{
+    height: 200px;
+}
+
+a{
+    display: block;
+    width: 100%;
+}
+
+.link-to-instagram{
+    color:palevioletred;
+}
+
+.fun-fact{
+    width: 300px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    padding: 20px;
+    border: 3px solid black;
+}
