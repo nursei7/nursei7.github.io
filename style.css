@@ -1,21 +1,113 @@
-img{
-    height: 200px;
+body{
+    background-color:#d0d0d0;
+    margin: 5px;
+    padding: 5px;
+    
+}
+
+ul{
+    list-style: none;
 }
 
 a{
+    text-decoration: none;
     display: block;
     width: 100%;
 }
 
-.link-to-instagram{
-    color:palevioletred;
+section{
+    width: 100%;
+    height: 95vh; 
+    background-image: url("images/bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
 }
 
-.fun-fact{
-    width: 300px;
-    position: absolute;
-    top: 5px;
-    right: 5px;
-    padding: 20px;
-    border: 3px solid black;
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    background-color: #FFFFFF;
+    box-shadow: 10px 10px 2px 1px rgba(0, 0, 0, .2);
+    padding: 0px 5%;
+    border-radius: 7px;
 }
+
+nav ul{
+    display: flex;
+}
+nav ul li a{
+    margin: 30px;
+    font-family: sans-serif;
+    color: #505050;
+    font-size: 18px;
+    font-weight: 700;
+}
+.logo{
+    font-family: Cambria, Cochin, Georgia, Times, serif;
+    color: #000000;
+    font-size: 22px;
+}
+.active{
+    font-weight: bold;
+    color: #2d2a2a;
+}
+.filmTitle{
+    top: 35px;
+    position: relative;
+    color: black;
+    left: 40%;
+}
+.film{
+    position: relative;
+    top: 40px;
+    left: 17%;
+    border-radius: 15px;
+    box-shadow: 10px 10px 2px 1px rgba(0, 0, 0, .2);
+}
+.about-container{
+    position: relative;
+    top: 100%;
+    width: 80%;
+    height: 100%;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 10px 10px 2px 1px rgba(0, 0, 0, .2);
+    display: flex;
+    margin:  20px auto;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+.about-text{
+    position: relative;
+    margin: 10%;
+    font-size: 20px;
+    
+}
+.box-1, .box-2, .box-3, .box-4{
+    width: 230px;
+    height: 280px;
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+    box-shadow: 10px 10px 2px 1px rgba(0, 0, 0, .2);
+}
+.box-container{
+    display: flex;
+    justify-content: space-between;
+}
+.box-1{
+    background-image: url("images/Zunair.jpg");
+}
+.box-2{
+    background-image: url("images/Nurgazy.jpg");
+}
+.box-3{
+    background-image: url("images/Usman.jpg");
+}
+.box-4{
+    background-image: url("images/Sony.jpg");
+}
+
