@@ -1,5 +1,4 @@
 body{
-    /* background-color:#292929; */
     margin: 0px;
     padding: 0px;
     
@@ -14,13 +13,13 @@ a{
     display: block;
     width: 100%;
 }
+/* Everything except the logo is written with sans serif font */
 p{
     font-family: sans-serif;
     line-height:2;
 }
 input{
-    font-family: sans-serif;
-    /* cursor: pointer; */
+    font-family: sans-serif;  
 }
 section{
     width: 100%;
@@ -32,7 +31,7 @@ section{
 }
 
 nav{
-    display: flex;
+    display: flex; /*flexes items horizontally*/
     justify-content: space-between;
     align-items: center;
     height: 60px;
@@ -44,14 +43,13 @@ nav ul{
     display: flex;
     
 }
+ /* background turns blue while being hovered over */
 li:hover{
     display: inline;
     justify-content: space-between;
     background-color: #4A70D7;
 }
-.navbar:hover{
-    
-}
+
 nav ul li a{
     margin: 30px;
     display: flex;
@@ -105,6 +103,7 @@ iframe{
     align-items: center;
     
 }
+/* the section has a text, story behind the film*/
 .about-text{
     top: 10%;
     padding: 10px;
@@ -119,6 +118,7 @@ iframe{
     background-color: #262626;
     justify-content: space-between;
 }
+/* the boxes are the pictures of actors */
 .box-1, .box-2, .box-3, .box-4{
     margin: 5%;
     width: 230px;
@@ -144,6 +144,7 @@ iframe{
 .box-4{
     background-image: url("images/Sony.jpg");
 }
+
 .info-section{
     box-shadow: 10px 10px 2px 1px rgba(0, 0, 0, .2);
     background-color: white;
@@ -175,13 +176,14 @@ iframe{
     left: 10%;
     cursor: pointer;
 }
-
+/* a container holding fitness videos */
 .workout-materials{
     background-color:white;
     height: 100vh;
     position: relative;
     top: 5vh;
 }
+/* text that asks if a visitor knows how to exercise at home */
 .hw-question-section{
     position: relative;
     left: 30%;
@@ -212,6 +214,7 @@ iframe{
     margin: auto;
     text-align: center;
 }
+/* actually a sentence inviting the visitor to join for a virtal workout */
 .invitation-paragraph{
     top: 5%;
     position: relative;
@@ -221,11 +224,10 @@ iframe{
     font-family: sans-serif;
     font-size: 23px;
 }
-
+/* button that refers to my zoom meeting room */
 .contact-us-button{
     background-color: black;
     color: white;
-    /* width: auto; */
     margin: auto;
     justify-content: center;
     font-size: 23px;
@@ -240,6 +242,7 @@ iframe{
     top: 10%;
     justify-content: center;
 }
+/* gif with rounded corners and a shadow */
 .do-it-gif{
     position: relative;
     box-shadow: 10px 10px 2px 1px rgba(0, 0, 0, .2);
