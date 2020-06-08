@@ -14,12 +14,11 @@
                 <!-- logo -->
                 <a href = "#" class = "logo">Workout United</a>
                 <!-- menu -->
-                <ul style="list-style: none;">
-                    <li><a href="#" class = "active">Home</a></li>
-                    <li><a href = "#">About</a></li>
-                    <li><a href = "#">Team</a></li>
-                    <li><a href = "#">Extra Materials</a></li>
-                    <li><a href = "#">Contact us</a></li>
+                <ul>
+                    <li><a class="navbar" href = "#">About</a></li>
+                    <li><a class="navbar" href = "#">Team</a></li>
+                    <li><a class="navbar" href = "#">Materials</a></li>
+                    <li><a class="navbar" href = "#">Contacts</a></li>
                 </ul>
             </nav>
             
@@ -35,55 +34,51 @@
         </section>
         
         <!-- about section -->
-        <div class = "about-container">
-            <p class = "about-text">
-                Zunair, Nurgazy, Usman and Sony are students at NYU Abu Dhabi. Back in pre-Covid-19 times they were 
-                “gym buddies”. It was always Sony who gathered all of them for a workout and was 
-                guiding his friends showing right techniques and making a training plan. Unfortunately, 
-                quarantine and long distance between them has put their friendship and a healthy habit of 
-                exercising together in a hard condition. Each and every one of them are occupied by 
-                their hobbies to cope with isolation albeit they miss their friends and the joy of 
-                physical activities. Finally, Sony cannot bear the lonely workouts and longing 
-                to seeing his friends. He calls them to invite to a virtual workout where they reunite 
-                doing push ups during which everybody catches themselves thinking how important it is to 
-                maintain connection with friends and constantly exercise. 
-            </p>      
-
+        <div class = "about-section">
+            <div class = "about-container">
+                <p class = "about-text">
+                    Zunair, Nurgazy, Usman and Sony are students at NYU Abu Dhabi. Back in pre-Covid-19 times they were 
+                    “gym buddies”. It was always Sony who gathered all of them for a workout and was 
+                    guiding his friends showing right techniques and making a training plan. 
+                </p>      
+                <p class = "about-text">
+                    Unfortunately, 
+                    quarantine and long distance between them has put their friendship and a healthy habit of 
+                    exercising together in a hard condition. Each and every one of them are occupied by 
+                    their hobbies to cope with isolation albeit they miss their friends and the joy of 
+                    physical activities.
+                </p>
+                <p class = "about-text">
+                    Finally, Sony cannot bear the lonely workouts and longing 
+                    for seeing his friends. He calls them to invite to a virtual workout where they reunite 
+                    doing push ups during which everybody catches themselves thinking how important it is to 
+                    maintain connection with friends and constantly exercise. 
+                </p>
+    
+            </div>
         </div>
+        
         <!-- actors section -->
         <div class = "box-container">
             <div class = "box-1">
-                <div class = "info-section">
-                    <p class = "heading">Zunair</p>
-                    <p class = "details">"PUBG_Lover"</p>
-                </div>
-                <input type="button" class = "read-more-button" value="Read more" 
+                <p class = "heading">Zunair <br>"PUBG_Lover"</p>
+                <input type="button" class = "read-more-button" value="Connect" 
                 onclick="window.open('https://www.facebook.com/Zunair.Viqar')" />
-                
             </div>
             <div class = "box-2">
-                <div class = "info-section">
-                    <p class = "heading"> Nurgazy</p>
-                    <p class = "details">"The Hacker"</p>
-                </div>
-                <input type="button" class = "read-more-button" value="Read more" 
+                <p class = "heading"> Nurgazy <br> "The Hacker"</p>
+                <input type="button" class = "read-more-button" value="Connect" 
                 onclick="window.open('https://www.facebook.com/nurgazy.seidaliev')" />
                 </div>
             <div class = "box-3">
-                <div class = "info-section">
-                    <p class = "heading">Usman</p>
-                    <p class = "details">"Dancer Cupid"</p>
-                </div>
-                <input type="button" class = "read-more-button" value="Read more" 
+                <p class = "heading">Usman <br> "Dancer Cupid"</p>
+                <input type="button" class = "read-more-button" value="Connect" 
             onclick="window.open(' https://www.facebook.com/Usman.Irshad15')" />
                
             </div>
             <div class = "box-4">
-                <div class = "info-section">
-                    <p class = "heading">Sony</p>
-                    <p class = "details">"Mister Olympia"</p>
-                </div>
-                <input type="button" class = "read-more-button" value="Read more" 
+                <p class = "heading">Sony <br> "Mister Olympia"</p>
+                <input type="button" class = "read-more-button" value="Connect" 
             onclick="window.open('https://www.facebook.com/sodgerelm')" />
                  
             </div>
@@ -91,9 +86,12 @@
 
         <!-- workout materials section -->
         <div class="workout-materials">
-            <h3>Home workout videos</h3>
+            <div class = "hw-question-section">
+                <h3 class = "hw-question">Do you know how to workout at home?</h3>
+                <h3>No? Then check out these videos!</h3>
+            </div>
             <div class = "video-container">
-                <iframe width="500" height="270" src="https://www.youtube.com/embed/jJ8o0qWmQus" frameborder="35" 
+                <iframe width="500" height="270" src="https://www.youtube.com/embed/N5ViYeGJOCA" frameborder="35" 
                     allow="accelerometer" allowfullscreen>
                 </iframe>
                 <iframe width="500" height="270" src="https://www.youtube.com/embed/Jbvb_MMGc8s" frameborder="35"
@@ -108,10 +106,7 @@
                     allow="accelerometer" allowfullscreen>
                 </iframe>
             </div>
-
-
         </div>
-
 
 
         <!--Contact me for a workout section!  -->
@@ -119,12 +114,14 @@
             <p class = "invitation-paragraph">
                 Are you motivated but have nobody to workout with?
             </p>
-            <input type="button" class = "contact-us-button" value="Contact us" 
-            onclick="window.open('https://www.facebook.com/nurgazy.seidaliev')" /> <!-- code taken from https://stackoverflow.com/questions/6303964/javascript-open-a-given-url-in-a-new-tab-by-clicking-a-button -->
+            <input type="button" class = "contact-us-button" value="Join us" 
+            onclick="window.open('https://us04web.zoom.us/j/2641810734?pwd=UTViTFl6ZzVJRWVtZzZnakcxU2d5UT09')" />
+            <div class = "gif">
+                <img  width = "300" height = "300" class = "do-it-gif" src="images/giphy.gif" alt="Just do it gif">
+            </div>
+            
         </div>
-        <div class = "gif">
-            <img  class = "do-it-gif" src="images/giphy.gif" alt="Just do it gif">
-        </div>
+        
         
         
         
