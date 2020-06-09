@@ -11,13 +11,12 @@ ul{
 a{
     text-decoration: none;
     display: block;
-    width: 70%;
-    /* font-size: 35px; */
+    width: 20%;
     color: black;
+    cursor: pointer;
 }
 p{
     font-family: sans-serif;
-    /* font-size: 25px; */
     width: 70%;
     line-height:2;
 }
@@ -73,16 +72,46 @@ section{
     height: 70vh;
     margin: auto;
     position: relative;
-    top: 10vh;
+    top: 9vh;
     background-color: wheat;
     
 }
-.start-button{
+.start-button-container{
+    background-color:white;
+    width: 8%;
     border-radius: 5px;
     height: auto;
-    width: auto;
     font-size: 24px;
     position: relative;
     left: 43%;
-    top: 90%;
+    top: 93%;
+}
+.next-button-container{
+    background-color:white;
+    width: 5%;
+    border-radius: 5px;
+    height: auto;
+    font-size: 24px;
+    position: relative;
+    left: 43%;
+    top: 80%;
+}
+.option-button-container{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    top: 80%;
+}
+.option-one-button, .option-two-button{
+    background-color:white;
+    width: 10%;
+    border-radius: 5px;
+    height: auto;
+    font-size: 24px;
+    position: relative;
+}
+.option-one-button{
+}
+.option-two-button{
+   
 }
