@@ -6,9 +6,9 @@
         <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Permanent+Marker&display=swap" rel="stylesheet">
         <link rel = "stylesheet"  type = "text/css" href = "style.css" />
     </head>
-    <body>
+    <body scroll='no'>
         <!-- main page -->
-        <section id = "home"class = "main-page">
+        <section id = "home"class = "main-page bg">
             <!-- navigation -->
             <nav>
                 <ul>
@@ -26,7 +26,7 @@
         </section>
         <!-- ----------------------------------------------------------------------------------- -->
         <!-- about page -->
-        <section  id = "about" class  = "about-page">
+        <section  id = "about" class  = "about-page bg">
             <nav>
                 <ul>
                     <li><a class="navbar text" href = "#home">Home</a></li>
@@ -39,7 +39,7 @@
             </div>
         </section>
         <!-- Contact page -->
-        <section id = "contacts" class  = "contact-page">
+        <section id = "contacts" class  = "contact-page bg">
             <nav>
                 <ul>
                     <li><a class="navbar text" href = "#home">Home</a></li>
@@ -52,7 +52,7 @@
             </div>
         </section>
         <!-- choose POV page -->
-        <section id = "choose_POV">
+        <section id = "choose_POV" class="bg">
             <div class="two-img">
                 <a class="image" href="#scene1"><img src="images/character1.svg"></a>
                 <a class="image" href="#scene1pov"><img src="images/character2.svg"></a>
@@ -63,7 +63,7 @@
             </div>
         </section>
         <!-- scene1 -->
-        <section id = "scene1">
+        <section id = "scene1" class="bg">
             <p>This is scene number one</p>
             <div class = "next-button-container">
                 <a class = "next-button text"  href = "#scene2" >Next</a>
@@ -71,7 +71,7 @@
         </section>
 
         <!-- scene2 -->
-        <section id = "scene2">
+        <section id = "scene2" class="bg">
             <p>This is scene number two</p>
                 <div class = "next-button-container">
                     <a class = "next-button text"  href = "#scene3" >Next</a>
@@ -80,7 +80,7 @@
 
 
         <!-- scene3 -->
-        <section id = "scene3">
+        <section id = "scene3" class="bg">
             <p>This is scene number three</p>
             <div class = "next-button-container">
                 <a class = "next-button text"  href = "#scene4" >Next</a>
@@ -144,7 +144,7 @@
         <!-- POV 2 scenes -->
 
         <!-- scene1 -->
-        <section id = "scene1pov">
+        <section id = "scene1pov" class="bg">
             <div class="page-content"><object type="image/svg+xml" data="images/panel1.svg"></object></div>
             <div class = "next-button-container">
                 <a class = "next-button text"  href = "#scene2pov" >Next</a>
@@ -152,7 +152,7 @@
         </section>
 
         <!-- scene2 -->
-        <section id = "scene2pov">
+        <section id = "scene2pov" class="bg">
             <div class="page-content"><object type="image/svg+xml" data="images/panel2.svg"></object></div>
                 <div class = "next-button-container">
                     <a class = "next-button text"  href = "#scene3pov" >Next</a>
@@ -161,28 +161,40 @@
 
 
         <!-- scene3 -->
-        <section id = "scene3pov">
+        <section id = "scene3pov" class="bg">
             <div class="page-content"><object type="image/svg+xml" data="images/panel3.svg"></object></div>
             <div class = "next-button-container">
-                <a class = "next-button text"  href = "#scene4pov" >Next</a>
+                <a class = "next-button text"  href = "#decisionpov" >Next</a>
             </div>
         </section>
         
+        <!-- decision -->
+        <section id = "decisionpov" class="bg">
+            <div class="page-content"><object type="image/svg+xml" data="images/decision1.svg"></object></div>
+            <a class = "option-one-button text"  href = "#scene4apov" >option one</a>
+            <a class = "option-two-button text"  href = "#scene4bpov" >option two</a>         
+        </section>
 
 
         <!-- scene4a -->
-        <section id = "scene4pov">
-            <p>This is scene number fourA of POV2</p>
-            <div class = "option-button-container">
-                <a class = "option-one-button text"  href = "#scene5apov" >option one</a>
-                <a class = "option-two-button text"  href = "#scene5bpov" >option two</a>
-            </div>
-                
+        <section id = "scene4apov" class="bgd1">
+            <div class="page-content"><object type="image/svg+xml" data="images/Apanel1.svg"></object></div>
+            <div class = "next-button-container">
+                <a class = "next-button text"  href = "#scene5apov" >Next</a>
+            </div> 
+        </section>
+
+        <!-- scene4b -->
+        <section id = "scene4bpov" class="bgl1">
+            <div class="page-content"><object type="image/svg+xml" data="images/Bpanel1.svg"></object></div>
+            <div class = "next-button-container">
+                <a class = "next-button text"  href = "#scene5bpov" >Next</a>
+            </div> 
         </section>
 
         <!-- scene5a -->
-        <section id = "scene5apov">
-            <p>This is scene number fiveA of POV2</p>
+        <section id = "scene5apov" class="bgd1">
+            <div class="page-content"><object type="image/svg+xml" data="images/Apanel2.svg"></object></div>    
             <div class = "next-button-container">
                 <a class = "next-button text"  href = "#scene6apov" >Next</a>
             </div>
@@ -190,8 +202,8 @@
         </section>
 
         <!-- scene5b -->
-        <section id = "scene5bpov">
-            <p>This is scene number fiveB of POV2</p>
+        <section id = "scene5bpov" class="bgl1">
+            <div class="page-content"><object type="image/svg+xml" data="images/Bpanel2.svg"></object></div>    
             <div class = "next-button-container">
                 <a class = "next-button text"  href = "#scene6bpov" >Next</a>
             </div>
@@ -199,8 +211,8 @@
         </section>
 
         <!-- scene6a -->
-        <section id = "scene6apov">
-            <p>This is scene number sixA of POV2</p>
+        <section id = "scene6apov" class="bgd2">
+            <div class="page-content"><object type="image/svg+xml" data="images/Apanel3.svg"></object></div>    
             <div class = "option-button-container">
                 <a class = "option-one-button text"  href = "#choose_POV" >Start Over</a>
                 <a class = "option-two-button text"  href = "#home" >Home Page</a>
@@ -208,8 +220,8 @@
         </section>
 
         <!-- scene6b -->
-        <section id = "scene6bpov">
-            <p>This is scene number sixB of POV2</p>
+        <section id = "scene6bpov" class="bgl2">
+            <div class="page-content"><object type="image/svg+xml" data="images/Bpanel3.svg"></object></div>    
             <div class = "option-button-container">
                 <a class = "option-one-button text"  href = "#choose_POV" >Start Over</a>
                 <a class = "option-two-button text"  href = "#home" >Home Page</a>
