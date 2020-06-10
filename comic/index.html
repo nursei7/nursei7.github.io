@@ -6,7 +6,7 @@
         <link rel = "stylesheet"  type = "text/css" href = "style.css" />
     </head>
     <body>
-        <script src="script.js"></script>
+        
         <!-- main page -->
         <section id = "home"class = "main-page">
             <!-- navigation -->
@@ -19,6 +19,8 @@
             </nav>
             <div class = "page-content">
                 <p>Main page/Comic title page</p>
+            </div>
+            <div class="single-button-container">
                 <div class = "start-button-container">
                     <a class = "start-button" href = "#choose_POV" type="button">Start!</a>
                 </div>
@@ -54,10 +56,12 @@
         <!-- choose POV page -->
         <section id = "choose_POV">
             <p>This is where the user chooses POV</p>
-                <div class = "option-button-container">
-                    <a class = "option-one-button"  href = "#scene1" >POV number one</a>
-                    <a class = "option-two-button"  href = "#scene1pov" >POV number two</a>
-                </div>
+
+            <ul class="images">
+                <li><a href="#scene1pov"><img src="" alt="family" id="family-path"></a></li>
+                <li><a href="#scene1"><img src="" alt="son" id="son-path"></a></li>
+            </ul>
+
         </section>
         <!-- scene1 -->
         <section id = "scene1">
@@ -214,7 +218,7 @@
         </section>
 
 
-
+        <script src="script.js"></script>
 
         
     </body>

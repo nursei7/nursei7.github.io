@@ -27,7 +27,7 @@ input{
 
 nav{
     display: flex; /*flexes items horizontally*/
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     height: 60px;
     background-color: #FFFFFF;
@@ -78,21 +78,25 @@ section{
 }
 .start-button-container{
     background-color:white;
-    width: 8%;
+    width: min-content;
     border-radius: 5px;
     height: auto;
-    font-size: 24px;
+    font-size: 1.5em;
+    justify-content: center;
+    padding: .5em;
     position: relative;
     left: 43%;
-    top: 93%;
+    top: 87%;
 }
 .next-button-container{
     background-color:white;
-    width: 5%;
+    width: min-content;
     border-radius: 5px;
     height: auto;
-    font-size: 24px;
+    font-size: 2em;
     position: relative;
+    justify-content: center;
+    padding: .2em .5em .2em .5em;
     left: 43%;
     top: 80%;
 }
@@ -104,14 +108,44 @@ section{
 }
 .option-one-button, .option-two-button{
     background-color:white;
-    width: 10%;
+    width: min-content;
     border-radius: 5px;
     height: auto;
-    font-size: 24px;
+    font-size: 1.5em;
     position: relative;
+    justify-content: center;
+    padding: .2em .5em .2em .5em;
+}
+
+.images{
+    position: relative;
+    top: 10%;
+    margin: auto;
+    width: 70vw;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+
+.single-button-container{
+    height: min-content;
+    margin: auto;
+    width: 70vw;
+    justify-content: center;
 }
 .option-one-button{
 }
 .option-two-button{
    
+}
+@media only screen and (max-width: 600px){
+
+    nav{
+        height: 80px;
+    }
+    .start-button-container{
+        top: 83%;
+        left: 40%;
+    }
 }
