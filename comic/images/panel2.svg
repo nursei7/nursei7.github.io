@@ -441,6 +441,17 @@
 	.st434{font-family:'Permanent Marker';}
 	.st435{font-size:36px;}
 </style>
+<style>
+	#speech {
+	    animation-name: zoom;
+	    animation-duration: 1s;
+	}
+
+	@keyframes zoom{
+	    0%{transform: scale(0);}
+	    100%{transform: scale(1);}
+	}
+</style>
 <g id="drawing">
 	<path class="st0" d="M1098.28,1079c-365.95,0-731.9,0-1098.05,0c0-3.16,0-6.31,0-9.47C0.23,715.81,0.26,362.08,0,8.36
 		c-0.01-8.03,1.84-9.31,9.51-9.31C642.99-0.72,1276.46-0.72,1909.94-1c8.79,0,9.64,2.55,9.63,10.15

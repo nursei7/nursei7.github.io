@@ -3,6 +3,7 @@
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 1895.12 1074.67" style="enable-background:new 0 0 1895.12 1074.67;" xml:space="preserve">
 <style type="text/css">
+	@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker");
 	.st0{fill:#FEFEFE;}
 	.st1{fill:#272727;}
 	.st2{fill:#FBD6EA;}
@@ -193,7 +194,7 @@
 	.st187{fill:#D7D7D6;}
 	.st188{fill:#C8C8C6;}
 	.st189{fill:#E9E9E7;}
-	.st190{font-family:'BackIssuesBB';}
+	.st190{font-family:'Permanent Marker';}
 	.st191{font-size:30.9989px;}
 	.st192{font-size:39.9986px;}
 	.st193{opacity:0.39;}

@@ -4,11 +4,12 @@
         <meta charset="utf-8">
         <title>Comic Title</title>
         <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Permanent+Marker&display=swap" rel="stylesheet">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <link rel = "stylesheet"  type = "text/css" href = "style.css" />
     </head>
     <body scroll='no'>
         <!-- main page -->
-        <section id = "home"class = "main-page bg">
+        <section id = "home" class = "main-page bg">
             <!-- navigation -->
             <nav>
                 <ul>
@@ -54,8 +55,8 @@
         <!-- choose POV page -->
         <section id = "choose_POV" class="bg">
             <div class="two-img">
-                <a class="image" href="#scene1"><img src="images/character1.svg"></a>
-                <a class="image" href="#scene1pov"><img src="images/character2.svg"></a>
+                <a id="pov1" class="image" href="#scene1"><img src="images/character1.svg"></a>
+                <a id="pov2" class="image" href="#scene1pov"><img src="images/character2.svg"></a>
             </div>
             <div style="margin-top: 2%">
                 <span class = "caption">POV #1</span>
@@ -64,79 +65,109 @@
         </section>
         <!-- scene1 -->
         <section id = "scene1" class="bg">
-            <p>This is scene number one</p>
+            <div class="page-content"><object id="panel4" type="image/svg+xml" data="images/panel4.svg"></object></div>
             <div class = "next-button-container">
                 <a class = "next-button text"  href = "#scene2" >Next</a>
             </div>
+            <audio id="s-ring">
+                <source src="sounds/ring.mp3" type="audio/mpeg">
+            </audio>
+            <audio id="s-car">
+                <source src="sounds/car.mp3" type="audio/mpeg">
+            </audio>
         </section>
 
         <!-- scene2 -->
         <section id = "scene2" class="bg">
-            <p>This is scene number two</p>
-                <div class = "next-button-container">
-                    <a class = "next-button text"  href = "#scene3" >Next</a>
-                </div>
+            <div class="page-content"><object id="panel5" type="image/svg+xml" data="images/panel5.svg"></object></div>
+            <div class = "next-button-container">
+                <a class = "next-button text"  href = "#scene3" >Next</a>
+            </div>
+            <audio id="s-party">
+                <source src="sounds/party.mp3" type="audio/mpeg">
+            </audio>
         </section>
 
 
         <!-- scene3 -->
         <section id = "scene3" class="bg">
-            <p>This is scene number three</p>
+            <div class="page-content"><object id="panel6" type="image/svg+xml" data="images/panel6.svg"></object></div>
             <div class = "next-button-container">
-                <a class = "next-button text"  href = "#scene4" >Next</a>
+                <a class = "next-button text"  href = "#decision" >Next</a>
             </div>
         </section>
         
-
+        <!-- decision -->
+        <section id = "decision" class="bg">
+            <div class="page-content"><object type="image/svg+xml" data="images/decision2.svg"></object></div>
+            <a class = "option-one-button button-choice text"  href = "#scene4a" >option one</a>
+            <a class = "option-two-button button-choice text"  href = "#scene4b" >option two</a>         
+        </section>
 
         <!-- scene4a -->
-        <section id = "scene4">
-            <p>This is scene number fourA</p>
-            <div class = "option-button-container">
-                <a class = "button-choice text"  href = "#scene5a" >option one</a>
-                <a class = "button-choice text"  href = "#scene5b" >option two</a>
+        <section id = "scene4a" class="bgd1">
+            <div class="page-content"><object id="Cpanel1" type="image/svg+xml" data="images/Cpanel1.svg"></object></div>
+            <div class = "next-button-container">
+                <a class = "next-button text"  href = "#scene5a" >Next</a>
             </div>
-                
+            <audio id="s-heart">
+                <source src="sounds/heart.mp3" type="audio/mpeg">
+            </audio>
+        </section>
+
+        <!-- scene4b -->
+        <section id = "scene4b" class="bgl1">
+            <div class="page-content"><object type="image/svg+xml" data="images/Dpanel1.svg"></object></div>
+            <div class = "next-button-container">
+                <a class = "next-button text"  href = "#scene5b" >Next</a>
+            </div> 
         </section>
 
         <!-- scene5a -->
-        <section id = "scene5a">
-            <p>This is scene number fiveA</p>
+        <section id = "scene5a" class="bgd1">
+            <div class="page-content"><object id="Cpanel" type="image/svg+xml" data="images/Apanel1.svg"></object></div>
             <div class = "next-button-container">
                 <a class = "next-button text"  href = "#scene6a" >Next</a>
-            </div>
-                
+            </div> 
+            <audio id="s-phone2">
+                <source src="sounds/phone.mp3" type="audio/mpeg">
+            </audio>
         </section>
 
         <!-- scene5b -->
-        <section id = "scene5b">
-            <p>This is scene number fiveB</p>
+        <section id = "scene5b" class="bgl1">
+            <div class="page-content"><object type="image/svg+xml" data="images/Bpanel1.svg"></object></div>
             <div class = "next-button-container">
                 <a class = "next-button text"  href = "#scene6b" >Next</a>
-            </div>
-                
+            </div> 
         </section>
 
         <!-- scene6a -->
-        <section id = "scene6a">
-            <p>This is scene number sixA</p>
+        <section id = "scene6a" class="bgd2">
+            <div class="page-content"><object id="Cpanel2" type="image/svg+xml" data="images/Cpanel2.svg"></object></div>    
             <div class = "option-button-container">
                 <a class = "button-choice text"  href = "#choose_POV" >Start Over</a>
                 <a class = "button-choice text"  href = "#home" >Home Page</a>
             </div>
+            <audio id="s-knock2">
+                <source src="sounds/knock.mp3" type="audio/mpeg">
+            </audio>
+            <audio id="s-owl">
+                <source src="sounds/owl.mp3" type="audio/mpeg">
+            </audio>                
         </section>
 
         <!-- scene6b -->
-        <section id = "scene6b">
-            <p>This is scene number sixB</p>
+        <section id = "scene6b" class="bgd2">
+            <div class="page-content"><object id="Dpanel2" type="image/svg+xml" data="images/Dpanel2.svg"></object></div>    
             <div class = "option-button-container">
                 <a class = "button-choice text"  href = "#choose_POV" >Start Over</a>
                 <a class = "button-choice text"  href = "#home" >Home Page</a>
             </div>
+            <audio id="s-parade">
+                <source src="sounds/parade.mp3" type="audio/mpeg">
+            </audio>                
         </section>
-
-
-
 
 
 
@@ -145,18 +176,24 @@
 
         <!-- scene1 -->
         <section id = "scene1pov" class="bg">
-            <div class="page-content"><object type="image/svg+xml" data="images/panel1.svg"></object></div>
+            <div class="page-content"><object id="panel1" type="image/svg+xml" data="images/panel1.svg"></object></div>
             <div class = "next-button-container">
                 <a class = "next-button text"  href = "#scene2pov" >Next</a>
             </div>
+            <audio id="s-radio">
+                <source src="sounds/radio.mp3" type="audio/mpeg">
+            </audio>
         </section>
 
         <!-- scene2 -->
         <section id = "scene2pov" class="bg">
-            <div class="page-content"><object type="image/svg+xml" data="images/panel2.svg"></object></div>
-                <div class = "next-button-container">
-                    <a class = "next-button text"  href = "#scene3pov" >Next</a>
-                </div>
+            <div class="page-content"><object id="panel2" type="image/svg+xml" data="images/panel2.svg"></object></div>
+            <div class = "next-button-container">
+                <a class = "next-button text"  href = "#scene3pov" >Next</a>
+            </div>
+            <audio id="s-paper">
+                <source src="sounds/paper.mp3" type="audio/mpeg">
+            </audio>
         </section>
 
 
@@ -178,10 +215,13 @@
 
         <!-- scene4a -->
         <section id = "scene4apov" class="bgd1">
-            <div class="page-content"><object type="image/svg+xml" data="images/Apanel1.svg"></object></div>
+            <div class="page-content"><object id="Apanel1" type="image/svg+xml" data="images/Apanel1.svg"></object></div>
             <div class = "next-button-container">
                 <a class = "next-button text"  href = "#scene5apov" >Next</a>
             </div> 
+            <audio id="s-phone">
+                <source src="sounds/phone.mp3" type="audio/mpeg">
+            </audio>
         </section>
 
         <!-- scene4b -->
@@ -194,11 +234,13 @@
 
         <!-- scene5a -->
         <section id = "scene5apov" class="bgd1">
-            <div class="page-content"><object type="image/svg+xml" data="images/Apanel2.svg"></object></div>    
+            <div class="page-content"><object id="Apanel2" type="image/svg+xml" data="images/Apanel2.svg"></object></div>    
             <div class = "next-button-container">
                 <a class = "next-button text"  href = "#scene6apov" >Next</a>
             </div>
-                
+            <audio id="s-knock">
+                <source src="sounds/knock.mp3" type="audio/mpeg">
+            </audio>
         </section>
 
         <!-- scene5b -->
@@ -212,20 +254,32 @@
 
         <!-- scene6a -->
         <section id = "scene6apov" class="bgd2">
-            <div class="page-content"><object type="image/svg+xml" data="images/Apanel3.svg"></object></div>    
+            <div class="page-content"><object id="Apanel3" type="image/svg+xml" data="images/Apanel3.svg"></object></div>    
             <div class = "option-button-container">
                 <a class = "button-choice text"  href = "#choose_POV" >Start Over</a>
                 <a class = "button-choice text"  href = "#home" >Home Page</a>
             </div>
+            <audio id="s-rain">
+                <source src="sounds/rain.mp3" type="audio/mpeg">
+            </audio>
+            <audio id="s-dog">
+                <source src="sounds/dog.mp3" type="audio/mpeg">
+            </audio>
         </section>
 
         <!-- scene6b -->
         <section id = "scene6bpov" class="bgl2">
-            <div class="page-content"><object type="image/svg+xml" data="images/Bpanel3.svg"></object></div>    
+            <div class="page-content"><object id="Bpanel3" type="image/svg+xml" data="images/Bpanel3.svg"></object></div>    
             <div class = "option-button-container">
                 <a class = "button-choice text"  href = "#choose_POV" >Start Over</a>
                 <a class = "button-choice text"  href = "#home" >Home Page</a>
             </div>
+            <audio id="s-haha">
+                <source src="sounds/laughing.mp3" type="audio/mpeg">
+            </audio>
+            <audio id="s-dog2">
+                <source src="sounds/dog.mp3" type="audio/mpeg">
+            </audio>
         </section>
 
         <script src="script.js"></script>

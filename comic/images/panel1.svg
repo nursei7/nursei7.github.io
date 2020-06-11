@@ -306,6 +306,17 @@
 	.st299{font-size:55.2759px;}
 	.st300{font-size:55.2747px;}
 </style>
+<style id="zoom">
+	#speech1_2_, #speech2 {
+	    animation-name: zoom;
+	    animation-duration: 1s;
+	}
+
+	@keyframes zoom{
+	    0%{transform: scale(0);}
+	    100%{transform: scale(1);}
+	}
+</style>
 <g id="drawing">
 	<path class="st0" d="M217.52,1167.3c-69.73,0-139.45-0.09-209.18,0.16c-5.7,0.02-6.84-1.15-6.84-6.84
 		c0.17-396.43,0.17-792.86,0-1189.29c0-5.69,1.14-6.84,6.84-6.83c634.22,0.16,1268.45,0.16,1902.67,0c5.7,0,6.85,1.14,6.84,6.84
