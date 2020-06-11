@@ -105,7 +105,43 @@ object, img{
     position: relative;
     top: 9vh;   
 }
+.about-page-content{
+    background-color:white;
+    border-radius: 10px;
+    width: 70vw;
+    height: 70vh;
+    margin: auto;
+    position: relative;
+    top: 9vh;  
+}
+/* about page text */
+.about-text{
+    position: relative;
+    left: 10%;
+    font-family: sans-serif;
 
+}
+.contact-text{
+    font-size: 25px;
+    position: relative;
+    left: 35%;
+    font-family: sans-serif;
+}
+.authors{
+    left: 10%;
+    top: 10%;
+    position: relative;
+    font-size: 20px;
+}
+.contact-page-content{
+    background-color: white;
+    border-radius: 10px;
+    width: 60vw;
+    height: 60vh;
+    margin: auto;
+    position: relative;
+    top: 9vh;  
+}
 .start-button-container{
     background-color: #661141;
     width: 115px;
@@ -123,14 +159,14 @@ object, img{
     font-size: 24px;
     position: relative;
     left: 43%;
-    top: 25%;
+    top: 20%;
     padding-left: 10px;
 }
 .option-button-container{
     position: relative;
     display: flex;
     justify-content: space-around;
-    top: 25%;
+    top: 15%;
 }
 .button-choice{
     background-color: #661141;
@@ -144,12 +180,12 @@ object, img{
 }
 
 .option-one-button{
-    top: -30%;
+    top: -48%;
     left: 60%;
 }
 
 .option-two-button{
-    top: -10%;
+    top: -45%;
     left: 60%;
 }
 
@@ -176,7 +212,7 @@ object, img{
 .caption{
     font-size: 24px;
     font-weight: bold;
-    margin-left: 22%;
-    margin-right: 22%;
+    margin-left: 17%;
+    margin-right: 20%;
 }
 
