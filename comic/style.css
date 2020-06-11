@@ -172,7 +172,7 @@ object, img{
     position: relative;
     display: flex;
     justify-content: space-around;
-    top: 15%;
+    top: 25%;
 }
 .button-choice{
     background-color: #661141;
@@ -221,4 +221,3 @@ object, img{
     margin-left: 22%;
     margin-right: 16%;
 }
-
