@@ -106,7 +106,8 @@ object, img{
     top: 9vh;   
 }
 .about-page-content{
-    background-color:white;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding-top: 5%;
     border-radius: 10px;
     width: 70vw;
     height: 70vh;
@@ -117,30 +118,35 @@ object, img{
 /* about page text */
 .about-text{
     top: 3%;
-    font-size: 14px;
+    font-size: 15px;
     position: relative;
     left: 13%;
-    font-family: Courier;
+    font-family: 'Gloria Hallelujah', cursive;
+    font-weight: bold;
 
 }
 .contact-text{
-    font-size: 25px;
+    font-size: 30px;
     position: relative;
     left: 35%;
-    font-family: Courier;
+    font-family: 'Gloria Hallelujah', cursive;
+    font-weight: bold;
 }
 .authors{
-    font-family: Courier;
+    font-family: 'Gloria Hallelujah', cursive;
+    font-weight: bold;
     left: 15%;
     top: 6%;
     position: relative;
     font-size: 20px;
 }
 .email-info{
-    font-family: Courier;
+    font-family: 'Gloria Hallelujah', cursive;
+    font-weight: bold;
 }
 .contact-page-content{
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding-top: 3%;
     border-radius: 10px;
     width: 60vw;
     height: 60vh;
