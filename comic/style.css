@@ -176,7 +176,7 @@ object, img{
 }
 .button-choice{
     background-color: #661141;
-    width: 10%;
+    width: 20%;
     border-radius: 5px;
     height: auto;
     font-size: 24px;
@@ -186,13 +186,13 @@ object, img{
 }
 
 .option-one-button{
-    top: -48%;
-    left: 60%;
+    top: -35%;
+    left: 55%;
 }
 
 .option-two-button{
-    top: -45%;
-    left: 60%;
+    top: -20%;
+    left: 55%;
 }
 
 .two-img img{
@@ -219,6 +219,6 @@ object, img{
     font-size: 24px;
     font-weight: bold;
     margin-left: 17%;
-    margin-right: 20%;
+    margin-right: 16%;
 }
 
