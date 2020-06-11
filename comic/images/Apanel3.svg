@@ -203,6 +203,18 @@
 	.st196{font-size:27px;}
 	.st197{font-size:26.9991px;}
 </style>
+<style>
+	#raindrops, #window, #dog{ 
+		animation: shake 1s infinite;
+		animation-timing-function: linear;   
+	}
+
+	@keyframes shake {
+		0% { transform: rotate(0.15deg); }
+		50% { transform: rotate(-0.15deg); }
+		100% { transform: rotate(0.15deg); }
+	}
+</style>
 <g id="drawing">
 	<path class="st0" d="M947.56,1074.54c-313.8,0-627.59-0.01-941.39,0.13c-5.04,0-6.17-1.13-6.17-6.17
 		C0.14,714.39,0.14,360.28,0,6.17C0,1.13,1.13,0,6.17,0c627.59,0.13,1255.19,0.13,1882.78,0c5.04,0,6.17,1.13,6.17,6.17

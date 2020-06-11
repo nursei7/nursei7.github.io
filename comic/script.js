@@ -44,6 +44,18 @@ window.addEventListener("load", function() {
 			sPaper.pause();
 		}
 	})
+	let what = panel2.getElementById("speech");
+	let sWhat = document.getElementById("s-what");
+	what.style.cursor = 'pointer';
+	what.addEventListener('click', () => {
+		if (sWhat.paused) {
+			sWhat.play();
+		}
+		else {
+			sWhat.pause();
+		}
+	})
+
 
 	let panel4a = document.getElementById("Apanel1").contentDocument;
 	let phone = panel4a.getElementById("phone");
@@ -231,4 +243,3 @@ window.addEventListener("load", function() {
 		}
 	})
 })
-

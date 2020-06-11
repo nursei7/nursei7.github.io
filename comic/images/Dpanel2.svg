@@ -250,6 +250,18 @@
 	.st243{font-size:50px;}
 	.st244{fill:none;stroke:#000000;stroke-width:10;stroke-miterlimit:10;}
 </style>
+<style>
+	#parade{ 
+		animation: shake 1s infinite;
+		animation-timing-function: linear;   
+	}
+
+	@keyframes shake {
+		0% { transform: rotate(0.15deg); }
+		50% { transform: rotate(-0.15deg); }
+		100% { transform: rotate(0.15deg); }
+	}
+</style>
 <g id="drawing">
 	<path class="st0" d="M-7.73,1074.56c0-2.21,0-4.42,0-6.63c0-355.11,0.01-710.21-0.1-1065.32c0-4.7,0.56-6.33,5.95-6.33
 		C630.15-3.56,1262.17-3.57,1894.2-3.69c4.69,0,5.87,0.79,5.87,5.75c-0.15,355.55-0.15,711.1,0.01,1066.65

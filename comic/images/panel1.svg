@@ -306,15 +306,16 @@
 	.st299{font-size:55.2759px;}
 	.st300{font-size:55.2747px;}
 </style>
-<style id="zoom">
-	#speech1_2_, #speech2 {
-	    animation-name: zoom;
-	    animation-duration: 1s;
+<style>
+	#radio{ 
+		animation: shake 1s infinite;
+		animation-timing-function: linear;   
 	}
 
-	@keyframes zoom{
-	    0%{transform: scale(0);}
-	    100%{transform: scale(1);}
+	@keyframes shake {
+		0% { transform: rotate(0.15deg); }
+		50% { transform: rotate(-0.15deg); }
+		100% { transform: rotate(0.15deg); }
 	}
 </style>
 <g id="drawing">

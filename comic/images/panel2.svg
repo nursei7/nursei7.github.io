@@ -442,14 +442,15 @@
 	.st435{font-size:36px;}
 </style>
 <style>
-	#speech {
-	    animation-name: zoom;
-	    animation-duration: 1s;
+	#paper, #speech{ 
+		animation: shake 1s infinite;
+		animation-timing-function: linear;   
 	}
 
-	@keyframes zoom{
-	    0%{transform: scale(0);}
-	    100%{transform: scale(1);}
+	@keyframes shake {
+		0% { transform: rotate(0.15deg); }
+		50% { transform: rotate(-0.15deg); }
+		100% { transform: rotate(0.15deg); }
 	}
 </style>
 <g id="drawing">
