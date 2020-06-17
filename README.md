@@ -27,5 +27,5 @@ Everything on the website is implemented on one page that consists of five secti
 3. Usage of object and screen ratios in making the website more adaptive
 
 
-
+Assignment #2 documentation
 
