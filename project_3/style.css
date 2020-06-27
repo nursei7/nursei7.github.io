@@ -1,7 +1,7 @@
 body{
     margin: 0px;
     padding: 0px;
-    overflow: hidden;
+    /* overflow: hidden; */
     
 }
 
@@ -24,7 +24,7 @@ input{
 }
 section{
     width: 100vw;
-    height: 100vh; 
+    height: 200vh; 
     background-color:white;
     background-repeat: no-repeat;
     background-size: cover;
@@ -65,27 +65,43 @@ nav ul li a{
     /* cursor: pointer; */
 }
 
-
-.filmTitle{
-    top: 8%;
+.expl-img{
     position: relative;
-    color: black;
-    left: 35%;
-    font-size: 27px;
-    width: 35%;
-}
-h1{
-    font-family: sans-serif;
-}
-.film{
-    position: relative;
-    top: 30px;
     left: 17%;
-    border-radius: 15px;
+    width: 70vw;
+    height: 70vh;
 }
-iframe{
-    border-radius: 15px;
+
+.video_holder{
+    /* height: 80vh; */
+
+
+    position: relative;
+    display: flex;
+    justify-content: space-between;
 }
+.prof_block, .boomer_block, .middle_block{
+    /* margin: 10%; */
+    /* width: 230px;
+    height: 280px; */
+
+
+    margin: 5%;
+    width: 230px;
+    height: 280px;
+    border-radius: 10px;
+
+}
+.prof_block{
+    background-image: url("images/professor_img.png");
+}
+
+.boomer_block{
+    background-image: url("images/boomer_img.png");
+}
+
+
+
 .about-section{
     background-color: white;
     height: 100vh;

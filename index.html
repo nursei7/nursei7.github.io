@@ -2,129 +2,95 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Workout United</title>
+        <title>Nurgazy Seidaliev</title>
         <link rel = "stylesheet"  type = "text/css" href = "style.css" />
     </head>
     <body>
-        <script src="script.js"></script>
-        <section>
+        <!-- home page -->
+        <section id = "home">
             <!-- navigation -->
-            <nav>
-                <!-- logo -->
-                <a href = "#" class = "logo">Workout United</a>
+            <nav class = "navigationbar">
                 <!-- menu -->
                 <ul>
-                    <li><a class="navbar" href = "#about">About</a></li>
-                    <li><a class="navbar" href = "#team">Team</a></li>
-                    <li><a class="navbar" href = "#materials">Materials</a></li>
-                    <li><a class="navbar" href = "#contacts">Contacts</a></li>
+                    <li><a class="navbar" href = "#home" onclick="scrollFunc(this)">Home</a></li>
+                    <li><a class="navbar" href = "#commlab" onclick="scrollFunc(this)">CommLab</a></li>
+                    <!-- <li><a class="navbar" href = "#github">GitHub</a></li> -->
+                    <!-- <li><a class="navbar" href = "#interests">Interests</a></li> -->
+                    <li><a class="navbar" href = "#connect" onclick="scrollFunc(this)">My CV</a></li>
                 </ul>
             </nav>
-            
-            <!-- film -->
-            <div class = "filmTitle">
-                <h1>Together We Thrive</h1>
+            <!-- hello I am Nurgazy -->
+            <div class = "text-intro">
+                <p>Hello!</p>
+                <p>My name is Nurgazy</p>
+                <p>I am a Computer Science student at NYU Abu Dhabi</p>
             </div>
-            <iframe  class = "film" width="800" height="450" src="https://www.youtube.com/embed/-7HeWFHo1S0" 
-                frameborder="35" allow="accelerometer" allowfullscreen>
-            </iframe>
 
-
+            <div class = "text-about">
+                <p>I grew up in Kyrgyzstan and came to Abu Dhabi to study computer science at NYUAD. 
+                    I am very interested in iOS application development, Artificial Intelligence and Machine Learning. This summer I will be interning in a tech
+                    company as a software engineer building software for Apple products.
+                </p>
+                <p>On my free time I enjoy being with my friends playing football as well as different card games. 
+                    During the long breaks I love traveling to new countries, meeting their people, learning new languages and documenting all of these in photographies.
+                </p>
+            </div>
+         
         </section>
-        
-        <!-- about section -->
-        <div id = "about" class = "about-section">
-            <div class = "about-container">
-                <p class = "about-text">
-                    Zunair, Nurgazy, Usman and Sony are students at NYU Abu Dhabi. Back in pre-Covid-19 times they were 
-                    “gym buddies”. It was always Sony who gathered all of them for a workout and was 
-                    guiding his friends showing right techniques and making a training plan. 
-                </p>      
-                <p class = "about-text">
-                    Unfortunately, 
-                    quarantine and long distance between them has put their friendship and a healthy habit of 
-                    exercising together in a hard condition. Each and every one of them are occupied by 
-                    their hobbies to cope with isolation albeit they miss their friends and the joy of 
-                    physical activities.
-                </p>
-                <p class = "about-text">
-                    Finally, Sony cannot bear the lonely workouts and longing 
-                    for seeing his friends. He calls them to invite to a virtual workout where they reunite 
-                    doing push ups during which everybody catches themselves thinking how important it is to 
-                    maintain connection with friends and constantly exercise. 
-                </p>
-            </div>
-        </div>
-        
-        <!-- actors section -->
-        <div id = "team" class = "box-container">
-            <div class = "box-1">
-                <p class = "heading">Zunair <br>"PUBG_Lover"</p>
-                <input type="button" class = "read-more-button" value="Connect" 
-                onclick="window.open('https://www.facebook.com/Zunair.Viqar')" />
-            </div>
-            <div class = "box-2">
-                <p class = "heading"> Nurgazy <br> "The Hacker"</p>
-                <input type="button" class = "read-more-button" value="Connect" 
-                onclick="window.open('https://www.facebook.com/nurgazy.seidaliev')" />
+
+        <!-- CommLab section -->
+        <div class = "commlab-container" id="commlab">
+            <div class = "project-container">
+                
+                <div class = "project1">
+                    <a href = "https://nursei7.github.io" class = "project-title" target="_blank">Together We Thrive</a>
+                    <img class = "box-1" src="images/30mff.jpg" alt="film festival" width="400" height="300">
+                    <a class = "doc" href="https://github.com/nursei7/nursei7.github.io/blob/master/README.md" target="_blank">Documentation</a>
                 </div>
-            <div class = "box-3">
-                <p class = "heading">Usman <br> "Dancer Cupid"</p>
-                <input type="button" class = "read-more-button" value="Connect" 
-            onclick="window.open(' https://www.facebook.com/Usman.Irshad15')" />
-               
-            </div>
-            <div class = "box-4">
-                <p class = "heading">Sony <br> "Mister Olympia"</p>
-                <input type="button" class = "read-more-button" value="Connect" 
-            onclick="window.open('https://www.facebook.com/sodgerelm')" />
-                 
+                <div class = "project2">
+                    <a href = "https://nursei7.github.io/comic/index#home" class = "project-title" target="_blank">Pride Comic </a>
+                    <img class = "box-2" src="images/pride.png" alt="comic poster" width="400" height="300">
+                    <a  class = "doc" href="https://github.com/nursei7/nursei7.github.io/blob/master/README.md" target="_blank">Documentation</a>
+                </div>
+
+                <div class = "project3">
+                    <p class = "project-title"   target="_blank"> Refugee Story</p>
+                    <img class = "box-3" src="images/refugee.jpg" alt="refuge" width="400" height="300">
+                </div>
+
+                <div class = "project4">
+                    <a href = "https://sashanksilwal.github.io/video-project2.0/" class = "project-title" target="_blank">Memes Explained</a>
+                    <img class = "box-4" src="images/explained.png" alt="mockumentary" width="400" height="300">
+                    <a  class = "doc" href="https://github.com/sashanksilwal/video-project2.0/blob/master/README.md" target="_blank">Documentation</a>
+                </div>
             </div>
         </div>
+        
+        <!-- interests -->
+        <!-- <div class = "interests-container" id = "interests">
+            fotografias
+        </div> -->
 
-        <!-- workout materials section -->
-        <div id = "materials" class="workout-materials">
-            <div class = "hw-question-section">
-                <h3 class = "hw-question">Do you know how to workout at home?</h3>
-                <h3>No? Then check out these videos!</h3>
-            </div>
-            <div class = "video-container">
-                <!-- first raw of videos -->
-                <iframe width="500" height="270" src="https://www.youtube.com/embed/N5ViYeGJOCA" frameborder="35" 
-                    allow="accelerometer" allowfullscreen>
-                </iframe>
-                <iframe width="500" height="270" src="https://www.youtube.com/embed/Jbvb_MMGc8s" frameborder="35"
-                     allow="accelerometer" allowfullscreen>
-                </iframe>
-            </div>
-            <div class  = "video-container-two">
-                <!-- second raw of videos -->
-                <iframe width="500" height="270" src="https://www.youtube.com/embed/Bi1IRzJIoAo" frameborder="35" 
-                    allow="accelerometer" allowfullscreen>
-                </iframe>
-                <iframe width="500" height="270" src="https://www.youtube.com/embed/ml6cT4AZdqI" frameborder="35" 
-                    allow="accelerometer" allowfullscreen>
-                </iframe>
-            </div>
-        </div>
-
-
-        <!--Contact me for a workout section!  -->
-        <div id = "contacts" class = "contact-us-section">
-            <p class = "invitation-paragraph">
-                Are you motivated but have nobody to workout with?
-            </p>
-            <input type="button" class = "contact-us-button" value="Join us" 
-            onclick="window.open('https://us04web.zoom.us/j/2641810734?pwd=UTViTFl6ZzVJRWVtZzZnakcxU2d5UT09')" />
-            <div class = "gif">
-                <img  width = "300" height = "300" class = "do-it-gif" src="images/giphy.gif" alt="Just do it gif">
-            </div>
-            
+        <!-- connect -->
+        <div class = "connect-container" id = "connect">
+        <div class ="cv">
+            <a class ="cv-link" href="myCV.pdf" target="_blank">Download CV</a>
         </div>
         
+        <div class="footer">
+            <p>Nurgazy Seidaliev</p>
+          </div>
+        </div>
         
+      
         
-        
+        <script src="js/jquery-3.5.1.min.js"></script>
+        <script src="js/script.js"></script>
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+     
     </body>
 
 </html>
