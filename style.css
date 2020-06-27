@@ -35,9 +35,11 @@ nav{
     justify-content: space-between;
     align-items: center;
     height: 60px;
-    /* width: 100vw; */
+    top: 0px;
+    position: fixed;
+    z-index: 999;
+    width: 100vw;
     background-color: black;
-    padding: 0px 5%;
 }
 nav ul{
     display: flex;
@@ -51,7 +53,7 @@ li:hover{
 }
 
 nav ul li a{
-    margin: 30px;
+    margin: 20px;
     display: flex;
     justify-content: stretch;
     font-family: sans-serif;
@@ -59,7 +61,7 @@ nav ul li a{
     width: auto;
     font-size: 18px;
     font-weight: 700;
-    /* cursor: pointer; */
+    cursor: pointer;
 }
 
 .text-intro p:nth-child(1){
@@ -128,7 +130,7 @@ nav ul li a{
     display: flex;
     flex-direction: column;
     position: relative;
-    /* top: 5%; */
+    top: 1%;
     left: 17%;
     width: 80vw;
     justify-content: center;
@@ -205,13 +207,23 @@ nav ul li a{
 .cv{
     position: relative;
     left: 40%;
-    top: 30%;
+    top: 15%;
     height: 10%;
     width: 20%;
     border-radius: 10px;
     background-color:black;
     justify-content: space-around;
     color: white;
+}
+.cv:hover, .doc:hover, .project-title:hover{
+    animation-name: pulse;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+@keyframes pulse{
+    from{transform: scale(1);}
+    to{transform: scale(1.1);}
 }
 .cv-link{
     position: relative;
@@ -229,4 +241,13 @@ nav ul li a{
     background-color: black;
     color: white;
     text-align: center;
+  }
+
+/* mouse trail */
+/* https://codepen.io/falldowngoboone/pen/PwzPYv */
+  .trail { /* className for the trail elements */
+    position: absolute;
+    height: 6px; width: 6px;
+    border-radius: 3px;
+    background: teal;
   }
