@@ -22,4 +22,4 @@
 function scrollFunc(obj){
     var elmnt = document.getElementById(obj.getAttribute("href"));
     elmnt.scrollIntoView();
-}
+};
