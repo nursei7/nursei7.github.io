@@ -184,7 +184,7 @@ nav ul li a{
 .project-title:hover{
     display: inline;
     justify-content: space-between;
-    color: goldenrod;
+    color: blueviolet;
 }
 .doc{
     position: relative;
@@ -198,7 +198,7 @@ nav ul li a{
 .doc:hover{
     display: inline;
     justify-content: space-between;
-    color: goldenrod;
+    color: blueviolet;
     
 }
 
