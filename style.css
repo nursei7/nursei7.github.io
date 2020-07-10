@@ -110,8 +110,7 @@ nav ul li a{
 .commlab-container{
     position: relative;
     width: 100vw;
-    height: 370vh; 
-    /* background-color: teal; */
+    height: 300vh; 
 }
 
 .interests-container{
