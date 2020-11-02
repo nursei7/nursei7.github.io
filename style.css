@@ -244,9 +244,9 @@ nav ul li a{
 
 /* mouse trail */
 /* https://codepen.io/falldowngoboone/pen/PwzPYv */
-  .trail { /* className for the trail elements */
-    position: absolute;
+  /* .trail { className for the trail elements */
+    /* position: absolute;
     height: 6px; width: 6px;
     border-radius: 3px;
     background: teal;
-  }
+  } */
